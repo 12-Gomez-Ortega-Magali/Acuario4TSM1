@@ -59,7 +59,7 @@
           <ul class="nav nav-tabs" role="tablist">
               <li role="presentation" ><h4>Bienvenido! <%=u.getNombre()%> <%=u.getAp_pat()%></h4></li>
               
-              <li role="presentation" ><a href="index.jsp">Inicio</a></li>
+              <li role="presentation" ><a href="principale.jsp">Inicio</a></li>
             <li role="presentation"><a href="registrop.jsp">Registrar un producto</a></li>
             <li role="presentation"><a href="productos.jsp">Mis productos</a></li>
           

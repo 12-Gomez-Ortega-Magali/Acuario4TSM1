@@ -1,4 +1,5 @@
-<%@page import="Datos.Productos"%>
+<%@page import="Datos.Productos"%>}
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 
@@ -21,6 +22,7 @@
     </head>
    
 <body>
+    
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,15 +33,30 @@
       <div class="navbar-collapse collapse">
         <div class="menu">
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="index.jsp">Inicio</a></li>
-            <li role="presentation"><a href="registro.jsp">Registrarse</a></li>
-            <li role="presentation"><a href="login.jsp">Iniciar sesion</a></li>
+        
+              
+              <li role="presentation" ><a href="principale.jsp">Inicio</a></li>
+          
+            <li role="presentation"><a href="productos.jsp">Mis productos</a></li>
+          
+            <li role="presentation"><a href="pedidos.jsp">Ver pedidos</a></li>
           
           </ul>
         </div>
       </div>
     </div>
   </nav>
+
+        
+        
+        
+    
+    <br>
+         
+    <br>
+         
+    <br>
+         
 
         
         
@@ -68,7 +85,7 @@
                                     <p>
                                         
                                         
-                                       
+                                   
                                     <p>
                                             <label>Descripcion:</label>	
                                         <input type="text" name="txtdesc" id="txtapmat"  placeholder="Descripcion"   required onkeypress=" return soloLetras(event)">
@@ -99,6 +116,9 @@
 
 
 
+
+
+
   
        
         <%
@@ -114,7 +134,7 @@
 
                 if (u.nuevoProducto()) {
 
-                    response.sendRedirect("registroj.jsp");
+                    response.sendRedirect("principale.jsp");
                     out.println("<script>window.alert('Registro completo');</script>");
 
                 } else {
